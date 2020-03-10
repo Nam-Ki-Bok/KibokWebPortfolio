@@ -1,0 +1,155 @@
+@font-face {
+    font-family: 'BM';
+    src: url('https://nam-ki-bok.github.io/KibokWebPortfolio/css/webfont/BMDoHyeon-OTF00.eot?#iefix') format('embedded-opentype'), url('https://nam-ki-bok.github.io/KibokWebPortfolio/css/webfont/BMDoHyeon-OTF00.otf') format('opentype'), url('https://nam-ki-bok.github.io/KibokWebPortfolio/css/webfont/BMDoHyeon-OTF00.woff') format('woff'), url('https://nam-ki-bok.github.io/KibokWebPortfolio/css/webfont/BMDoHyeon-OTF00.ttf') format('truetype'), url('https://nam-ki-bok.github.io/KibokWebPortfolio/css/webfont/BMDoHyeon-OTF00.svg#BMDoHyeon-OTF00') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* default */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 30px 0 0 40px;
+    padding-bottom: 17px;
+    font-size: 45px;
+    font-family: 'BM';
+    border-bottom: 5px solid black;
+}
+
+.infoButton {
+    position: absolute;
+    width: 64px;
+    height: 37px;
+    background-image: url(../images/main/Info.png);
+    top: 60px;
+    right: 0;
+    margin-right: 10px;
+    border: none;
+}
+
+.portfolioWrap {
+    position: relative;
+    width: 1709px;
+    height: 700px;
+
+    margin: 5% auto;
+    max-width: 100%;
+}
+
+.portfolioWrap .FallingGrade {
+    position: absolute;
+    width: 499px;
+    height: 700px;
+}
+
+.portfolioWrap .FallingGrade .FallingGradeBtn {
+    width: 499px;
+    height: 612px;
+    background-image: url(../images/FallingGrade/cardNews.png);
+}
+
+.portfolioWrap .FallingGrade .name {
+    font-size: 40px;
+    color: black;
+    font-family: 'BM';
+    
+    text-align: center;
+    margin-top: 20px;
+}
+
+.portfolioWrap .KibokWebPortfolio {
+    position: absolute;
+    width: 499px;
+    height: 700px;
+    left: 50%;
+    margin-left: -249.5px;
+}
+
+.portfolioWrap .KibokWebPortfolio .KibokWebPortfolioBtn {
+    width: 499px;
+    height: 612px;
+    background-image: url(../images/KibokWebPortfolio/cardNews.png);
+}
+
+.portfolioWrap .KibokWebPortfolio .name {
+    font-size: 40px;
+    color: black;
+    font-family: 'BM';
+
+    text-align: center;
+    margin-top: 20px;
+}
+
+.portfolioWrap .algorithm {
+    position: absolute;
+    width: 499px;
+    height: 700px;
+    right: 0;
+}
+
+.portfolioWrap .algorithm .algorithmBtn {
+    width: 500px;
+    height: 612px;
+    background-image: url(../images/algorithm/cardNews.png);
+}
+
+.portfolioWrap .algorithm .name {
+    font-size: 35px;
+    color: black;
+    font-family: 'BM';
+
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* screen width < 1500px */
+@media(max-width: 1500px) {
+    .portfolioWrap {
+        width: 1000px;
+        height: auto;
+        transition: 0.2s;
+    }
+
+    .portfolioWrap .FallingGrade {
+        position: relative;
+        margin: 5% auto;
+        transition: 0.2s;
+    }
+
+    .portfolioWrap .FallingGrade .FallingGradeBtn {
+        width: 100%;
+        transition: 0.2s;
+    }
+
+    .portfolioWrap .KibokWebPortfolio {
+        position: relative;
+        transition: 0.2s;
+    }
+
+    .portfolioWrap .algorithm {
+        position: relative;
+        margin: 5% auto;
+        transition: 0.2s;
+    }
+}

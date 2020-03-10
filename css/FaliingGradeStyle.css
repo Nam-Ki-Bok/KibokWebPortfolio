@@ -1,0 +1,574 @@
+@font-face {
+    font-family: 'BM';
+    src: url('https://nam-ki-bok.github.io/KibokWebPortfolio/css/webfont/BMDoHyeon-OTF00.eot?#iefix') format('embedded-opentype'), url('https://nam-ki-bok.github.io/KibokWebPortfolio/css/webfont/BMDoHyeon-OTF00.otf') format('opentype'), url('https://nam-ki-bok.github.io/KibokWebPortfolio/css/webfont/BMDoHyeon-OTF00.woff') format('woff'), url('https://nam-ki-bok.github.io/KibokWebPortfolio/css/webfont/BMDoHyeon-OTF00.ttf') format('truetype'), url('https://nam-ki-bok.github.io/KibokWebPortfolio/css/webfont/BMDoHyeon-OTF00.svg#BMDoHyeon-OTF00') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* default */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-image: url(../images/FallingGrade/background.png);
+}
+
+h1 {
+    margin: 30px 0 0 40px;
+    padding-bottom: 17px;
+
+    font-size: 45px;
+    font-family: 'BM';
+    border-bottom: 5px solid black;
+    text-shadow: 4px 0 4px #bfbfbf;
+
+}
+
+#page_1 {
+    position: relative;
+    width: 100%;
+    height: 950px;
+    /*          background-color: darkblue;*/
+}
+
+#page_1 .backButton {
+    position: absolute;
+    width: 72px;
+    height: 37px;
+    background-image: url(../images/FallingGrade/FallingGradeBack.png);
+    top: 30px;
+    right: 0;
+    margin-right: 10px;
+    border: none;
+    background-color: transparent;
+}
+
+#page_1 .outlineWrap .title {
+    position: absolute;
+    font-size: 27px;
+
+    color: #fefff2;
+    font-family: 'BM';
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black, 2px 2px 8px pink;
+
+    top: 110px;
+    left: 40px;
+}
+
+#page_1 .outlineWrap .outline {
+    position: absolute;
+    font-size: 22px;
+
+    color: #fefff2;
+    font-family: 'BM';
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black, 4px 4px 10px black;
+
+    top: 170px;
+    left: 40px;
+    white-space: nowrap;
+}
+
+#page_1 .outlineWrap .skill {
+    position: absolute;
+    font-size: 22px;
+
+    color: #fefff2;
+    font-family: 'BM';
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black, 4px 4px 10px black;
+
+    right: 1%;
+    top: 110px;
+}
+
+#page_1 .temporaryWrap {
+    width: 100%;
+    height: 450px;
+    position: relative;
+    top: 450px;
+
+    /*          background-color: palegoldenrod;*/
+}
+
+#page_1 .temporaryWrap .title {
+    position: absolute;
+    font-size: 30px;
+
+    color: #fefff2;
+    font-family: 'BM';
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black, 4px 4px 10px pink;
+
+    margin: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    transition: 0.3s;
+}
+
+#page_1 .temporaryWrap .temporary1 {
+    position: absolute;
+    width: 402px;
+    height: 341px;
+    background-image: url(../images/FallingGrade/temporary1.png);
+
+    bottom: 10%;
+    margin-right: 75.2%;
+    right: 0;
+    transition: 0.3s;
+}
+
+#page_1 .temporaryWrap .temporary2 {
+    position: absolute;
+    width: 400px;
+    height: 340px;
+    background-image: url(../images/FallingGrade/temporary2.png);
+
+    bottom: 10%;
+    margin-right: 50.5%;
+    right: 0;
+    transition: 0.3s;
+}
+
+#page_1 .temporaryWrap .temporary3 {
+    position: absolute;
+    width: 400px;
+    height: 340px;
+    background-image: url(../images/FallingGrade/temporary3.png);
+    bottom: 10%;
+
+    margin-right: 25.9%;
+    right: 0;
+    transition: 0.3s;
+}
+
+#page_1 .temporaryWrap .temporary4 {
+    position: absolute;
+    width: 400px;
+    height: 340px;
+    background-image: url(../images/FallingGrade/temporary4.png);
+    bottom: 10%;
+
+    margin-right: 1%;
+    right: 0;
+    transition: 0.3s;
+}
+
+/* page_1 반응형 */
+/* screen width < 1643px */
+@media(max-width:1643px) {
+
+    #page_1 {
+        height: 1600px;
+        transition: 0.3s;
+    }
+
+    #page_1 .temporaryWrap {
+        width: 100%;
+        height: 1000px;
+        top: 450px;
+        transition: 0.3s;
+    }
+
+    #page_1 .temporaryWrap .title {
+        position: absolute;
+        font-size: 30px;
+
+        color: #fefff2;
+        font-family: 'BM';
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black, 4px 4px 10px pink;
+
+        left: 50%;
+        transform: translateX(-50%);
+
+        transition: 0.3s;
+    }
+
+    #page_1 .temporaryWrap .temporary1 {
+        width: 450px;
+        height: 390px;
+        background-size: cover;
+        margin-left: 15%;
+        left: 0;
+        top: 8%;
+        transition: 0.3s;
+    }
+
+    #page_1 .temporaryWrap .temporary2 {
+        width: 450px;
+        height: 390px;
+        background-size: cover;
+        margin-right: 15%;
+        top: 8%;
+        right: 0;
+        transition: 0.3s;
+    }
+
+    #page_1 .temporaryWrap .temporary3 {
+        width: 450px;
+        height: 390px;
+        background-size: cover;
+        margin-left: 15%;
+        left: 0;
+        bottom: 6%;
+        transition: 0.3s;
+    }
+
+    #page_1 .temporaryWrap .temporary4 {
+        width: 450px;
+        height: 390px;
+        background-size: cover;
+        margin-right: 15%;
+        right: 0;
+        bottom: 6%;
+        transition: 0.3s;
+    }
+}
+
+/* page_1 반응형 */
+/* screen width < 1300px */
+@media(max-width:1300px) {
+
+    #page_1 {
+        /*         background-color: mediumseagreen;*/
+        height: 2400px;
+        transition: 0.3s;
+    }
+
+    #page_1 .temporaryWrap {
+        width: 100%;
+        height: 1750px;
+        top: 450px;
+        transition: 0.3s;
+        /*         background-color: palegoldenrod;*/
+    }
+
+    #page_1 .temporaryWrap .title {
+        position: absolute;
+        font-size: 30px;
+
+        color: #fefff2;
+        font-family: 'BM';
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black, 4px 4px 10px pink;
+
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #page_1 .temporaryWrap .temporary1 {
+        position: absolute;
+        width: 500px;
+        height: 400px;
+        background-size: cover;
+
+        left: 35%;
+        transform: translateX(-50%);
+        top: 4%;
+
+    }
+
+    #page_1 .temporaryWrap .temporary2 {
+        position: absolute;
+        width: 500px;
+        height: 400px;
+        background-size: cover;
+
+        left: 50%;
+        transform: translateX(-50%);
+        top: 30%;
+
+    }
+
+    #page_1 .temporaryWrap .temporary3 {
+        position: absolute;
+        width: 500px;
+        height: 400px;
+        background-size: cover;
+
+        left: 35%;
+        transform: translateX(-50%);
+        top: 56%;
+
+    }
+
+    #page_1 .temporaryWrap .temporary4 {
+        position: absolute;
+        width: 500px;
+        height: 400px;
+        background-size: cover;
+
+        left: 50%;
+        transform: translateX(-50%);
+        top: 82%;
+
+    }
+}
+
+#page_2 {
+    position: relative;
+    width: 100%;
+    height: 900px;
+    /*          background-color: #2b2e25;*/
+}
+
+#page_2 .XD_image {
+    position: absolute;
+    width: 677px;
+    height: 623px;
+    background-image: url(../images/FallingGrade/XD_image.png);
+    border: solid black 3px;
+    bottom: 10%;
+    right: 0;
+    margin-right: 4%;
+}
+
+#page_2 .title {
+    position: absolute;
+    font-size: 35px;
+
+    color: #fefff2;
+    font-family: 'BM';
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black, 4px 4px 10px pink;
+
+    left: 130px;
+    top: 25%;
+}
+
+#page_2 .design {
+    position: absolute;
+    font-size: 26px;
+
+    color: #fefff2;
+    font-family: 'BM';
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black, 4px 4px 10px black;
+
+    left: 130px;
+    top: 35%;
+}
+
+/* page_2 반응형 */
+/* screen width < 1626px */
+@media(max-width:1626px) {
+
+    #page_2 {
+        height: 1200px;
+        transition: 0.3s;
+
+    }
+
+    #page_2 .XD_image {
+        top: 47%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #page_2 .title {
+        top: 7%;
+        left: 50%;
+        transform: translateX(-50%);
+        white-space: nowrap;
+
+        transition: 0.3s;
+    }
+
+    #page_2 .design {
+        top: 17%;
+        left: 50%;
+        transform: translateX(-50%);
+        white-space: nowrap;
+
+        transition: 0.3s;
+    }
+
+}
+
+#page_3 {
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    /*     background-color: dimgray;*/
+}
+
+#page_3 .screenWrap {
+    position: absolute;
+    /*     background-color: darkblue;*/
+
+    left: 3%;
+    top: -3%;
+}
+
+#page_3 .screenWrap .title {
+    font-size: 30px;
+
+    color: #fefff2;
+    font-family: 'BM';
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black, 4px 4px 10px pink;
+    white-space: nowrap;
+}
+
+#page_3 .screenWrap .screen {
+    font-size: 22px;
+
+    color: #fefff2;
+    font-family: 'BM';
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black, 4px 4px 10px black;
+
+    top: 170px;
+    left: 40px;
+    white-space: nowrap;
+}
+
+#page_3 .resultWrap {
+    position: absolute;
+    /*     background-color: darkolivegreen;*/
+
+    right: 5%;
+    bottom: 45%;
+}
+
+#page_3 .resultWrap .title {
+    font-size: 30px;
+
+    color: #fefff2;
+    font-family: 'BM';
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black, 4px 4px 10px pink;
+    white-space: nowrap;
+}
+
+#page_3 .resultWrap .result {
+    font-size: 22px;
+
+    color: #fefff2;
+    font-family: 'BM';
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black, 4px 4px 10px black;
+
+    top: 170px;
+    left: 40px;
+    white-space: nowrap;
+}
+
+#page_3 .workWrap {
+    position: absolute;
+    /*     background-color: darkgoldenrod;*/
+
+    left: 10%;
+    bottom: 20%;
+}
+
+#page_3 .workWrap .title {
+    font-size: 30px;
+
+    color: #fefff2;
+    font-family: 'BM';
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black, 4px 4px 10px pink;
+    white-space: nowrap;
+}
+
+#page_3 .workWrap .work {
+    font-size: 22px;
+
+    color: #fefff2;
+    font-family: 'BM';
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black, 4px 4px 10px black;
+
+    top: 170px;
+    left: 40px;
+    white-space: nowrap;
+}
+
+/* page_3 반응형 */
+/* screen width < 1626px */
+@media(max-width:1626px) {
+    #page_3 .screenWrap {
+        top: 5%;
+        transition: 0.3s;
+    }
+
+    #page_3 .resultWrap {
+        bottom: 40%;
+        transition: 0.3s;
+    }
+
+    #page_3 .workWrap {
+        bottom: 5%;
+        transition: 0.3s;
+    }
+}
+
+#page_4 {
+    position: relative;
+    width: 100%;
+    height: 900px;
+/*    background-color: darkolivegreen;*/
+}
+
+#page_4 .title {
+    position: absolute;
+    font-size: 30px;
+
+    color: #fefff2;
+    font-family: 'BM';
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black, 4px 4px 10px pink;
+    white-space: nowrap;
+
+    margin: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#page_4 .inGame {
+    position: absolute;
+    width: 80%;
+    height: auto;
+    background-size: cover;
+    background-blend-mode: hue;
+
+
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10%;
+}
+
+#page_4 .backButton {
+    position: absolute;
+    width: 73px;
+    height: 37px;
+    background-image: url(../images/FallingGrade/FallingGradeBack.png);
+
+    right: 0;
+    bottom: 0;
+    margin: 0 20px 20px 0;
+    border: none;
+    background-color: transparent;
+}
+
+@media (max-width:1580px) {
+    #page_4{
+        height: 800px;
+        transition: 0.3s;
+    }
+}
+
+@media (max-width:1410px) {
+    #page_4{
+        height: 700px;
+        transition: 0.3s;
+    }
+}
+
+@media (max-width:1050px) {
+    #page_4{
+        height: 600px;
+        transition: 0.3s;
+    }
+}
+

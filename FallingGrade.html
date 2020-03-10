@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="KIBOK">
+    <meta name="description" content="HTML, CSS">
+    <meta name="keywords" content="FallingGrade, Java, Game">
+
+    <link rel="shortcut icon" href="images/pavicon.png">
+    <link rel=stylesheet href="css/FaliingGradeStyle.css">
+    <title>KIBOK WEB PORTFOLIO</title>
+</head>
+
+<body>
+    <div id="page_1">
+        <h1>Falling Grade</h1>
+        <button class="backButton" type="button" onclick="location.href='index.html'" style="cursor: pointer"></button>
+
+        <div class="outlineWrap">
+            <p class="title">개요</p>
+            <p class="outline">
+                - 총알 피하기, 리듬게임 등 고전 게임의 개념을 응용.<br><br>
+                - 피하기만 하는 게임이 아닌 복합적인 게임을 구성하려고 노력.<br><br>
+                - 우리에게 친근하게 다가올 수 있는 주제를 선택.<br><br>
+                - 학점이 떨어진다면 상대적으로 낮은 학점은 피하려고 할 것이고 높은 학점은 얻으려고 할 것이다.
+            </p>
+
+            <p class="skill">
+                사용 언어 : JAVA<br>
+                개발 도구 : Eclipse
+            </p>
+        </div>
+
+        <div class="temporaryWrap">
+            <p class="title">임시 게임 디자인</p>
+            <div class="temporary1"></div>
+            <div class="temporary2"></div>
+            <div class="temporary3"></div>
+            <div class="temporary4"></div>
+        </div>
+    </div>
+
+    <div id="page_2">
+
+        <div class="XD_image"></div>
+        <p class="title">Adobe XD를 이용한 세부 디자인 계획<br><br></p>
+        <p class="design">
+            - 각각의 page에 어울리는 화면과 버튼 완성<br><br>
+            - 떨어지는 학점은 구분 가능하게 각각 다른 색으로 계획<br><br>
+            - GameOver 화면과 Clear 화면은 다르게 디자인<br><br>
+            - 모든 버튼은 마우스가 올라갔을 경우 이미지가 바뀌게 계획<br><br>
+            - 기존의 메뉴바 대신 JLabel을 이용, 메뉴바와 종료버튼 디자인</p>
+    </div>
+
+
+    <div id="page_3">
+        <div class="screenWrap">
+            <p class="title">게임 화면 구성</p>
+            <p class="screen">
+                - 게임에 필요한 모든 이미지, 버튼 생성.<br><br>
+                - 각각의 화면을 표시할 변수 설정.<br><br>
+                - if문, 변수, setVisible 메소드를 통해 상황에 맞는 버튼, 이미지 출력
+            </p>
+        </div>
+
+        <div class="resultWrap">
+            <p class="title">게임 결과 산출</p>
+            <p class="result">
+                - static 변수를 통한 게임 결과 계산.<br><br>
+                - 캐릭터와 학점이 접촉 시 학점의 생성값으로 점수 부여.<br><br>
+                - double 값으로 계산 후 String.format 메소드를 통해 출력.<br><br>
+            </p>
+        </div>
+
+        <div class="workWrap">
+            <p class="title">게임 구동 원리</p>
+            <p class="work">
+                - 난이도 별 학점 생성 빈도 수 조절.<br><br>
+                - 랜덤 생성 값에 따른 학점 종류 조절.<br><br>
+                - 랜덤 하강 값에 따른 학점 하강 속도 조절.<br><br>
+                - 캐릭터 이미지와 학점 이미지 좌표 계산을 통한 점수 계산.<br><br>
+                - KeyAdapter 클래스를 이용한 캐릭터 이동.<br><br>
+            </p>
+        </div>
+    </div>
+
+    <div id="page_4">
+        <p class="title">게임 플레이 영상</p>
+
+        <video class="inGame" controls>
+            <source src="images/FallingGrade/FallingGradeInGame.mp4" type="video/mp4">
+        </video>
+
+        <button class="backButton" type="button" onclick="location.href='index.html'" style="cursor: pointer"></button>
+    </div>
+
+</body></html>
