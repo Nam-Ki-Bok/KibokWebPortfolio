@@ -1,5 +1,16 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:100,300,900);
 
+@font-face {
+    font-family: 'BM';
+    src: url('https://nam-ki-bok.github.io/KibokWebPortfolio/css/webfont/BMDoHyeon-OTF00.eot?#iefix') format('embedded-opentype'), url('https://nam-ki-bok.github.io/KibokWebPortfolio/css/webfont/BMDoHyeon-OTF00.otf') format('opentype'), url('https://nam-ki-bok.github.io/KibokWebPortfolio/css/webfont/BMDoHyeon-OTF00.woff') format('woff'), url('https://nam-ki-bok.github.io/KibokWebPortfolio/css/webfont/BMDoHyeon-OTF00.ttf') format('truetype'), url('https://nam-ki-bok.github.io/KibokWebPortfolio/css/webfont/BMDoHyeon-OTF00.svg#BMDoHyeon-OTF00') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.test {
+    font-family: 'BM';
+}
+
 html,
 body {
     height: 100%;
