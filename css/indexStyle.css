@@ -145,12 +145,12 @@ h1 {
 
     .portfolioWrap .KibokWebPortfolio {
         position: relative;
+        margin: 5% auto;
         transition: 0.2s;
     }
 
     .portfolioWrap .algorithm {
-        position: relative;
-        margin: 5% auto;
+       position: relative;
         transition: 0.2s;
     }
 }
