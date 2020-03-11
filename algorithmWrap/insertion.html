@@ -1,7 +1,6 @@
 <!DOCTYLE html>
 
     <html>
-    <!-- commit test -->
 
 <head>
     <meta charset="utf-8">
@@ -11,6 +10,11 @@
 
     <link rel="shortcut icon" href="../images/pavicon.png">
     <link rel="stylesheet" href="../css/algorithmCssWrap/insertion.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/vs2015.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
     <title>KIBOK WEB PORTFOLIO</title>
 </head>
 
@@ -26,5 +30,57 @@
 
     <img class="algorithm" src="../images/algorithm/insertion-sort.png" alt="insertion sort">
 
-    <a class="code" href="https://github.com/Nam-Ki-Bok/Sort" target="_blank">View Code</a>
-</body></html>
+    <a class="code" href="https://github.com/Nam-Ki-Bok/Sort" target="_blank">View Code <span style="font-size: 20px">(github)</span></a>
+    <pre><code class="c">
+void insertionSort(int *arr, int arrSize) {
+    int i, j, key;
+    for(i = 1; i &lt; arrSize; i++) {
+        key = arr[i];
+        for(j = i-1; j &gt;= 0 ; j--) {
+            if(key &lt; arr[j]) {
+                arr[j+1] = arr[j];
+            }
+            else
+                break;
+        }
+        arr[j+1] = key;
+    }
+}
+</code></pre>
+</body>
+
+</html>
+<!--<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/vs2015.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+</head>
+
+<body>
+    <pre><code class="c++">
+void insertionSort(int *arr, int arrSize) {
+    int i, j, key;
+    for(i = 1; i < arrSize; i++) {
+        key = arr[i];
+        for(j = i-1; j >= 0 ; j--) {
+            if(key < arr[j]) {
+                arr[j+1] = arr[j];
+            }
+            else
+                break;
+        }
+        arr[j+1] = key;
+    }
+}
+</code></pre>
+
+</body></html>-->
