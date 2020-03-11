@@ -1,9 +1,5 @@
-@font-face {
-    font-family: 'BM';
-    src: url('https://nam-ki-bok.github.io/KibokWebPortfolio/css/webfont/BMDoHyeon-OTF00.eot?#iefix') format('embedded-opentype'), url('https://nam-ki-bok.github.io/KibokWebPortfolio/css/webfont/BMDoHyeon-OTF00.otf') format('opentype'), url('https://nam-ki-bok.github.io/KibokWebPortfolio/css/webfont/BMDoHyeon-OTF00.woff') format('woff'), url('https://nam-ki-bok.github.io/KibokWebPortfolio/css/webfont/BMDoHyeon-OTF00.ttf') format('truetype'), url('https://nam-ki-bok.github.io/KibokWebPortfolio/css/webfont/BMDoHyeon-OTF00.svg#BMDoHyeon-OTF00') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
+
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,900);
 
 /* default */
 
@@ -15,6 +11,7 @@ body {
 
 body {
     overflow-x: hidden;
+    background-color: #2d2d2d;
 }
 
 h1,
@@ -31,18 +28,21 @@ p {
 h1 {
     margin: 30px 0 0 40px;
     padding-bottom: 17px;
-    font-size: 45px;
-    font-family: 'BM';
-    border-bottom: 5px solid black;
+    font-size: 40px;
+    font-family: Lato;
+    font-weight: 100;
+    color: white;
+    border-bottom: 1px solid white;
 }
 
-.backButton {
+.back {
+    font-size: 36px;
+    color: white;
+    text-decoration: none;
     position: absolute;
-    width: 72px;
-    height: 37px;
-    background-image: url(../../images/KibokWebPortfolio/back.png);
-    top: 60px;
+    display: block;
+    font-weight: 100;
+    top: 50px;
     right: 0;
     margin-right: 10px;
-    border: none;
 }
