@@ -67,9 +67,10 @@ h1 {
     margin: 90px 0 0 350px;
 }
 
-@media(max-width:500px) {
+@media(max-width:1000px) {
     .description2 {
         font-size: 10px;
+        font-family: 궁서체;
     }
 
 }
