@@ -64,7 +64,7 @@ h1 {
     font-family: 'BM';
     font-size: 16px;
     color: #ededed;
-    margin: 90px 0 0 700px;
+    margin: 50px 0 0 700px;
 }
 
 @media(max-width:1000px) {
@@ -86,7 +86,7 @@ h1 {
     position: absolute;
     display: block;
     font-weight: 200;
-    margin: 500px 0 0 40px;
+    margin: 520px 0 0 40px;
 }
 
 .c {
@@ -95,7 +95,7 @@ h1 {
     width: 95%;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 550px;
+    margin-top: 570px;
 }
 
 .remark {

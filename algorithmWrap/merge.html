@@ -25,19 +25,78 @@
     </header>
 
     <p class="description">
-        - 정렬 설명 삽입 위치
+        - 배열의 크기가 1이 될때 까지 <span style="color: #5CAAEF">분할한 후 다시 합치면서 정렬</span>하는 방식<br><br>
+        - <span style="color: #5CAAEF">분할정복</span> 알고리즘 중 하나이다
     </p>
 
     <img class="algorithm" src="../images/algorithm/merge-sort.png" alt="selection sort">
 
     <p class="description2">
-        - 추가 설명 삽입 위치
+        <span style="font-size: 17px; color: "><span style="color: #5CAAEF">분할정복</span> 알고리즘이란 ?</span><br><br>
+        - 어떤 문제를 다시 작은 문제로 분할해 해결하며 합치는 알고리즘<br><br><br>
+        - 보이는 것과 같이 병합정렬에서는 <span style="color: #5CAAEF">임시 배열</span>이 사용된다<br><br>
+        &nbsp; &nbsp;임시 배열에 정렬 후 본 배열에 복사해 줘야 하기 때문이다<br><br>
+        &nbsp; &nbsp;여기서 알 수 있듯이 만약 많은 데이터를 가지고 있는 배열을<br><br>
+        &nbsp; &nbsp;병합정렬로 정렬할 경우<br><br>
+        &nbsp; &nbsp;같은 크기의 임시 배열도 만들어야 하기 때문에<br><br>
+        &nbsp; &nbsp;저장 공간을 낭비할 수 있다<br><br>
+        &nbsp; &nbsp;하지만 <span style="color: #5CAAEF">배열이 아닌 리스트</span>로 구현하여 정렬한다면<br><br>
+        &nbsp; &nbsp;<span style="color: #5CAAEF">매우 효율적인 정렬</span>이 될 수 있다
     </p>
 
     <a class="viewCode" href="https://github.com/Nam-Ki-Bok/Sort" target="_blank" onmouseover="this.style.color='#5CAAEF'" onmouseout="this.style.color='white'">View Code <span style="font-size: 20px">(github)</span></a>
 
     <pre><code class="c">
-코드 삽입 위치
+#define MAX_SIZE 100000
+void mergeSort (int *arr, int left, int mid, int right) {
+    int tmpArr[MAX_SIZE];
+    int i, j, loc;
+    loc = i = left;
+    j = mid + 1;
+    
+    <span class="remark">// 왼쪽 배열을 다 옮기거나</span>
+    <span class="remark">// 오른쪽 배열을 다 옮길때까지 반복</span>
+    while ((i &lt;= mid) &amp;&amp; (j &lt;= right)) {
+        if (arr[i] &lt;= arr[j]) {
+            tmpArr[loc++] = arr[i++];
+        }
+        else {
+            tmpArr[loc++] = arr[j++];
+        }
+    }
+    
+    <span class="remark">// 오른쪽 배열을 다 옮긴 경우</span>
+    <span class="remark">// 나머지 왼쪽 배열을 전부 옮긴다</span>
+    if (i &lt;= mid) {
+        while (i &lt;= mid) {
+            tmpArr[loc++] = arr[i++];
+        }
+    }
+    
+    <span class="remark">// 왼쪽 배열을 다 옮긴 경우</span>
+    <span class="remark">// 나머지 오른쪽 배열을 전부 옮긴다</span>
+    if (j &lt;= right) {
+        while (j &lt;= right) {
+            tmpArr[loc++] = arr[j++];
+        }
+    }
+    
+    <span class="remark">// 임시 배열에서 본 배열로 복사한다</span>
+    for (i = left; i &lt;= right; i++) {
+        arr[i] = tmpArr[i];
+    }
+    
+}
+
+void merge (int *arr, int left, int right) {
+    int mid = (left + right) / 2;
+    
+    if (mid &lt; right) {
+        merge(arr, 0, mid); <span class="remark">// 왼쪽 배열 분할</span>
+        merge(arr, mid+1, right); <span class="remark">// 오른쪽 배열 분할</span>
+        mergeSort(arr, left, mid, right); <span class="remark">// 왼쪽, 오른쪽 배열 정렬</span>
+    }
+}
 </code></pre>
 
 </body></html>
