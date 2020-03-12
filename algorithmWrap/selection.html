@@ -1,26 +1,61 @@
 <!DOCTYLE html>
 
     <html>
-    <!-- commit test -->
 
     <head>
-        <meta charset="utf-8">
-        <meta name="author" content="KIBOK">
-        <meta name="description" content="HTML, CSS">
-        <meta name="keywords" content="기복, 포트폴리오, 연습, HTML, CSS">
+    <meta charset="utf-8">
+    <meta name="author" content="KIBOK">
+    <meta name="description" content="HTML, CSS">
+    <meta name="keywords" content="기복, 포트폴리오, 연습, HTML, CSS">
 
-        <link rel="shortcut icon" href="images/pavicon.png">
-        <link rel="stylesheet" href="../css/algorithmCssWrap/insertion.css">
-        <title>KIBOK WEB PORTFOLIO</title>
-    </head>
+    <link rel="shortcut icon" href="../images/pavicon.png">
+    <link rel="stylesheet" href="../css/algorithmCssWrap/insertion.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/vs2015.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+    <title>KIBOK WEB PORTFOLIO</title>
+</head>
 
-    <body>
-        <header>
-            <h1>SELECTION SORT</h1>            
-            <a href="../algorithm.html" class="back">back</a>
-            
-        </header>
+<body>
+    <header>
+        <h1><span style="font-weight: 300">SELECTION</span> SORT</h1>
+        <a href="../algorithm.html" class="back">back</a>
+    </header>
 
-    </body>
+    <p class="description">
+        - 정렬할 위치를 선택한 후 <span style="color: red">최소, 최댓값</span>을 찾아 <span style="color: red">그 위치로 옮기는</span>정렬
+    </p>
 
-    </html>
+    <img class="algorithm" src="../images/algorithm/selection-sort.png" alt="selection sort">
+
+    <p class="description2">
+        - 왼쪽의 그림과 같이 sortLoc를 정한 후 sortLoc부터 배열 끝까지<br><br>
+        &nbsp;&nbsp;&nbsp;최소, 최댓값 위치를 찾아 swap 해주면 된다<br><br>
+        
+    </p>
+
+    <a class="viewCode" href="https://github.com/Nam-Ki-Bok/Sort" target="_blank" onmouseover="this.style.color='#5CAAEF'" onmouseout="this.style.color='white'">View Code <span style="font-size: 20px">(github)</span></a>
+
+    <pre><code class="c">
+void selectionSort(int *arr, int arrSize) {
+    int j, sortLoc, minLoc, tmp;
+    <span class="remark">// arrSize - 1 만큼 반복하면 정렬 완성</span>
+    for(sortLoc = 0; sortLoc &lt; arrSize - 1; sortLoc++) {
+        minLoc = sortLoc;
+        for(j = sortLoc; j &lt; arrSize; j++) {
+            if(arr[minLoc] &gt; arr[j])
+                minLoc = j;
+        }
+        <span class="remark">// 정렬할 위치와 최솟값의 위치가 다른 경우에만 swap 한다</span>
+        if(minLoc != sortLoc){
+            tmp = arr[minLoc];
+            arr[minLoc] = arr[sortLoc];
+            arr[sortLoc] = tmp;
+        }
+    }
+}
+</code></pre>
+
+</body></html>
