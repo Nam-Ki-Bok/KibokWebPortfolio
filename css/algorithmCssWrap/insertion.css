@@ -18,7 +18,7 @@ body {
 }
 
 body {
-/*    overflow-x: hidden;*/
+    /*    overflow-x: hidden;*/
     background-color: #2d2d2d;
 }
 
@@ -62,6 +62,14 @@ h1 {
     margin: 40px 0 0 40px;
 }
 
+.description2 {
+    position: absolute;
+    font-family: 'BM';
+    color: #ededed;
+    margin: 130px 0 0 350px;
+}
+
+
 .algorithm {
     position: absolute;
     margin: 30px 0 0 55px;
@@ -75,7 +83,7 @@ h1 {
     position: absolute;
     display: block;
     font-weight: 200;
-    margin: 400px 0 0 40px;
+    margin: 390px 0 0 40px;
 }
 
 .c {
@@ -84,5 +92,9 @@ h1 {
     width: 95%;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 450px;
+    margin-top: 440px;
+}
+
+.remark {
+    font-size: 13px;
 }

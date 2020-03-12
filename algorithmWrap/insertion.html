@@ -30,25 +30,33 @@
 
     <img class="algorithm" src="../images/algorithm/insertion-sort.png" alt="insertion sort">
 
+    <p class="description2">
+        - 왼쪽의 그림과 같이 Key 값 기준 왼쪽의 수들을 비교해 위치를 찾으면 된다<br><br>
+        - 아래의 코드는 오름차순 코드이다, 만약 내림차순으로 하고 싶다면 if문의 부등호만 반대로 바꾸면 된다<br><br>
+        - for문 안쪽 코드를 한줄로 줄일 수 도 있는데 잘 생각해보자 !
+
+    </p>
+
     <a class="viewCode" href="https://github.com/Nam-Ki-Bok/Sort" target="_blank">View Code <span style="font-size: 20px">(github)</span></a>
-    
+
     <pre><code class="c">
 void insertionSort(int *arr, int arrSize) {
     int i, j, key;
+    
+    <span class="remark">// 배열의 원소 개수 - 1 만큼 반복한다.</span>
     for(i = 1; i &lt; arrSize; i++) {
         key = arr[i];
         for(j = i - 1; j &gt;= 0; j--) {
             if(key &lt; arr[j]) {
-                arr[j+1] = arr[j];
-            }
+                arr[j+1] = arr[j]; <span class="remark">// key 값 보다 크다면 오른쪽으로 한칸 이동</span>
+            
             else
                 break;
         }
-        arr[j+1] = key;
+        arr[j+1] = key; <span class="remark">// 비교 후 j 값은 key 값이 삽입될 위치 - 1 이 되므로
+</span>
     }
 }
 </code></pre>
 
-</body>
-
-</html>
+</body></html>
