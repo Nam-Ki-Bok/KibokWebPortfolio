@@ -7,10 +7,7 @@
     font-style: normal;
 }
 
-
-
 /* default */
-
 html,
 body {
     margin: 0;
@@ -18,7 +15,6 @@ body {
 }
 
 body {
-    /*    overflow-x: hidden;*/
     background-color: #2d2d2d;
 }
 
@@ -60,15 +56,16 @@ h1 {
     font-family: 'BM';
     color: #ededed;
     margin: 40px 0 0 40px;
+    font-size: 16px;
 }
 
 .description2 {
     position: absolute;
     font-family: 'BM';
+    font-size: 16px;
     color: #ededed;
-    margin: 130px 0 0 350px;
+    margin: 90px 0 0 350px;
 }
-
 
 .algorithm {
     position: absolute;
