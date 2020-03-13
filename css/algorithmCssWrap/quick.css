@@ -66,6 +66,7 @@ h1 {
     color: #ededed;
     margin: 200px 0 0 600px;
 }
+
 .responsiveDescription2 {
     position: absolute;
     font-family: 'BM';
@@ -77,16 +78,16 @@ h1 {
 
 @media(max-width:1000px) {
     .responsiveDescription2 {
-        margin: 200px 0 0 580px;
+        margin: 200px 0 0 600px;
     }
 }
 
-@media(max-width:1370px){
-    .responsiveDescription2{
+@media(max-width:1370px) {
+    .responsiveDescription2 {
         display: block;
     }
-    
-    .description2{
+
+    .description2 {
         display: none;
     }
 }
@@ -96,7 +97,7 @@ h1 {
     margin: 30px 0 0 55px;
 }
 
-.algorithm2{
+.algorithm2 {
     position: absolute;
     margin: 420px 0 0 55px;
 }
@@ -118,7 +119,8 @@ h1 {
     width: 95%;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 1080px;;
+    margin-top: 1080px;
+    ;
 }
 
 .remark {
