@@ -88,7 +88,7 @@ h1 {
 
 @media(max-width:500px) {
     .responsiveDescription2 {
-        margin: 200px 0 0 520px;
+        margin: 200px 0 0 500px;
         display: none;
     }
 }
