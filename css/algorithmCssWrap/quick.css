@@ -76,8 +76,8 @@ h1 {
 }
 
 @media(max-width:1000px) {
-    .description2 {
-        font-size: 14px;
+    .responsiveDescription2 {
+        margin: 200px 0 0 550px;
     }
 }
 
