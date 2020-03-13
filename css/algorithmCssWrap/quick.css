@@ -66,10 +66,28 @@ h1 {
     color: #ededed;
     margin: 200px 0 0 600px;
 }
+.responsiveDescription2 {
+    position: absolute;
+    font-family: 'BM';
+    font-size: 17px;
+    color: #ededed;
+    margin: 200px 0 0 600px;
+    display: none;
+}
 
 @media(max-width:1000px) {
     .description2 {
         font-size: 14px;
+    }
+}
+
+@media(max-width:1370px){
+    .responsiveDescription2{
+        display: block;
+    }
+    
+    .description2{
+        display: none;
     }
 }
 
