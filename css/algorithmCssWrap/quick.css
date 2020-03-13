@@ -86,13 +86,6 @@ h1 {
     }
 }
 
-@media(max-width:500px) {
-    .responsiveDescription2 {
-        margin: 200px 0 0 450px;
-        display: none;
-    }
-}
-
 .algorithm {
     position: absolute;
     margin: 30px 0 0 55px;
