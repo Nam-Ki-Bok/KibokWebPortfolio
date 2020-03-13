@@ -3,41 +3,87 @@
     <html>
 
     <head>
-    <meta charset="utf-8">
-    <meta name="author" content="KIBOK">
-    <meta name="description" content="HTML, CSS">
-    <meta name="keywords" content="기복, 포트폴리오, 연습, HTML, CSS">
+        <meta charset="utf-8">
+        <meta name="author" content="KIBOK">
+        <meta name="description" content="HTML, CSS">
+        <meta name="keywords" content="기복, 포트폴리오, 연습, HTML, CSS">
 
-    <link rel="shortcut icon" href="../images/pavicon.png">
-    <link rel="stylesheet" href="../css/algorithmCssWrap/quick.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/vs2015.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-    <script>
-        hljs.initHighlightingOnLoad();
-    </script>
-    <title>KIBOK WEB PORTFOLIO</title>
-</head>
+        <link rel="shortcut icon" href="../images/pavicon.png">
+        <link rel="stylesheet" href="../css/algorithmCssWrap/quick.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/vs2015.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>
+            hljs.initHighlightingOnLoad();
 
-<body>
-    <header>
-        <h1><span style="font-weight: 300">QUCIK</span> SORT</h1>
-        <a href="../algorithm.html" class="back">back</a>
-    </header>
+        </script>
+        <title>KIBOK WEB PORTFOLIO</title>
+    </head>
 
-    <p class="description">
-        - 퀵정렬 설명 삽입
-    </p>
+    <body>
+        <header>
+            <h1><span style="font-weight: 300">QUCIK</span> SORT</h1>
+            <a href="../algorithm.html" class="back">back</a>
+        </header>
 
-    <img class="algorithm" src="../images/pavicon.png" alt="quick sort">
+        <p class="description">
+            - merge sort와 마찬가지로 <span class="highlight">분할정렬 알고리즘</span> 중 하나이다<br><br>
+            - <span class="highlight">pivot</span> 값을 정해 pivot 보다 <span class="highlight">작은 값은 왼쪽</span><br><br>
+            &nbsp;&nbsp;&nbsp;pivot 보다 <span class="highlight">큰 값은 오른쪽</span>으로 정렬한다<br><br>
+        </p>
 
-    <p class="description2">
-        - 추가 설명 삽입
-    </p>
+        <img class="algorithm" src="../images/algorithm/quick-sort.png" alt="quick sort">
 
-    <a class="viewCode" href="https://github.com/Nam-Ki-Bok/Sort" target="_blank" onmouseover="this.style.color='#5CAAEF'" onmouseout="this.style.color='white'">View Code <span style="font-size: 20px">(github)</span></a>
+        <img class="algorithm2" src="../images/algorithm/quick-sort2.png" alt="quick sort">
 
-    <pre><code class="c">
-- 코드 삽입
+        <p class="description2">
+            - 이미 정렬 된 데이터에 사용할 경우 최악의 시간 복잡도를 가지게 된다<br><br>
+            - 밑에 코드와 함께 보면 이해가 가겠지만<br><br>
+            &nbsp;&nbsp;&nbsp;우선 맨 왼쪽 값을 pivot으로 둔다<br><br>
+            &nbsp;&nbsp;&nbsp;그 후 i를 증가시키면서 pivot과 비교한다<br><br>
+            &nbsp;&nbsp;&nbsp;i와 j의 값이 다르면서<br><br>
+            &nbsp;&nbsp;&nbsp;pivot 값이 i 값 보다 클 경우<br><br>
+            &nbsp;&nbsp;&nbsp;j++ 한 뒤 i와 j를 swap 한다<br><br>
+            &nbsp;&nbsp;&nbsp;반복을 마친 후 pivot 값과 j 값을 swap 한다<br><br>
+            &nbsp;&nbsp;&nbsp;그러면 pivot 값은 고정 값이 된다<br><br>
+            &nbsp;&nbsp;&nbsp;또 pivot 기준으로 왼쪽은 pivot 보다 작은 값<br><br>
+            &nbsp;&nbsp;&nbsp;오른쪽은 pivot 보다 큰 값이 오게 된다<br><br>
+        </p>
+
+        <a class="viewCode" href="https://github.com/Nam-Ki-Bok/Sort" target="_blank" onmouseover="this.style.color='#5CAAEF'" onmouseout="this.style.color='white'">View Code <span style="font-size: 20px">(github)</span></a>
+
+        <pre><code class="c">
+void quickSort (int *arr, int left, int right) {
+   
+    int pivot, i, j, tmp;
+    pivot = left;
+    j = pivot;
+    
+    if (left &lt; right) {
+        for (i = pivot + 1; i &lt;= right; i++) {
+            if (arr[pivot] > arr[i]) {
+                j++;
+                if (i != j) {
+                    tmp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = tmp;
+                }
+            }
+        }
+        
+        <span class="remark">// swap을 하고 나면 pivot을 기준으로</span>
+        <span class="remark">// 작은 값은 왼쪽, 큰 값은 오른쪽으로 위치한다</span>
+        tmp = arr[pivot];
+        arr[pivot] = arr[j];
+        arr[j] = tmp;
+        
+       <span class="remark"> // 배열을 분할 할 수 있을 때 까지 분할한다</span>
+        pivot = j;
+        quickSort(arr, left, j-1);
+        quickSort(arr, j+1, right);
+    }
+}
 </code></pre>
 
-</body></html>
+    </body>
+
+    </html>
