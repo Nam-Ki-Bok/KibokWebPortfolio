@@ -75,9 +75,10 @@ h1 {
     margin: 40px 0 0 40px;
 }
 
-@media(max-width:1370px) {
+@media(max-width:1300px) {
     .responsiveDescription {
         display: block;
+        font-size: 14px;
     }
 
     .description {
