@@ -131,6 +131,7 @@ h1 {
     margin-top: 350px;
 }
 
+
 @media(max-width:600px) {
     .viewCode {
         margin: 340px 0 0 40px;
@@ -138,6 +139,10 @@ h1 {
     
     .c {
         margin: 390px 0 0 40px
+    }
+    
+    .reponsiveDescription2 {
+       display: none;
     }
 }
 
