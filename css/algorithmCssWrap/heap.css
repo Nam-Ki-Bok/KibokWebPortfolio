@@ -113,13 +113,14 @@ h1 {
 
 .viewCode {
     font-size: 38px;
-    font-family: Lato;
+/*    font-family: Lato;*/
+    font-family: 궁서체;
     color: #ffffff;
     text-decoration: none;
     position: absolute;
     display: block;
     font-weight: 200;
-    margin: 340px 0 0 40px;
+    margin: 300px 0 0 40px;
 }
 
 .c {
@@ -128,7 +129,7 @@ h1 {
     width: 95%;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 390px;
+    margin-top: 350px;
 }
 
 .remark {
