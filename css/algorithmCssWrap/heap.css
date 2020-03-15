@@ -75,6 +75,15 @@ h1 {
     margin: 40px 0 0 40px;
 }
 
+.reponsiveDescription2 {
+    position: absolute;
+    font-family: 'BM';
+    font-size: 16px;
+    color: #ededed;
+    margin: 40px 0 0 40px;
+    display: none;
+}
+
 @media(max-width:1300px) {
     .responsiveDescription {
         display: block;
@@ -82,6 +91,15 @@ h1 {
     }
 
     .description {
+        display: none;
+    }
+
+    .reponsiveDescription2 {
+        display: block;
+        font-size: 14xp;
+    }
+
+    .description2 {
         display: none;
     }
 }
