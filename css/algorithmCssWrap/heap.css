@@ -132,7 +132,7 @@ h1 {
 }
 
 
-@media(max-width:600px) {
+@media(max-width:800px) {
     .viewCode {
         margin: 340px 0 0 40px;
     }
