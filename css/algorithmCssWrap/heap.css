@@ -132,17 +132,13 @@ h1 {
 }
 
 
-@media(max-width:1300px) {
+@media(max-width:1000px) {
     .viewCode {
-        margin: 340px 0 0 40px;
+        margin: 400px 0 0 40px;
     }
     
     .c {
-        margin: 390px 0 0 40px
-    }
-    
-    .reponsiveDescription2 {
-       display: none;
+        margin-top: 450px;
     }
 }
 
