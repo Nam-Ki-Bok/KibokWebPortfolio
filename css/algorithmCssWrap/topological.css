@@ -39,6 +39,13 @@ h1 {
     border-bottom: 1px solid white;
 }
 
+.graphLink {
+    color: #5CAAEF;
+    text-decoration: none;
+    position: relative;
+    border-bottom: 1.5px #5CAAEF solid;
+}
+
 .back {
     font-size: 36px;
     font-family: Lato;
@@ -56,29 +63,29 @@ h1 {
     font-family: 'BM';
     color: #ededed;
     margin: 40px 0 0 40px;
-    font-size: 16px;
+    font-size: 17px;
 }
 
 .responsiveDescription {
     font-family: 'BM';
     color: #ededed;
     margin: 40px 0 0 40px;
-    font-size: 16px;
+    font-size: 17px;
     display: none;
 }
 
 .description2 {
     position: absolute;
     font-family: 'BM';
-    font-size: 16px;
+    font-size: 17px;
     color: #ededed;
-    margin: 40px 0 0 40px;
+    margin: 100px 0 0 700px;
 }
 
 .reponsiveDescription2 {
     position: absolute;
     font-family: 'BM';
-    font-size: 16px;
+    font-size: 17px;
     color: #ededed;
     margin: 40px 0 0 40px;
     display: none;
@@ -105,9 +112,16 @@ h1 {
 }
 
 .algorithm {
-    position: relative;
+    position: absolute;
     width: 40%;
     margin: 30px 0 0 55px;
+    background-color: #434343;
+}
+
+.algorithm2 {
+    position: absolute;
+    width: 40%;
+    margin: 843px 0 0 700px;
     background-color: #434343;
 }
 
@@ -119,7 +133,7 @@ h1 {
     position: absolute;
     display: block;
     font-weight: 200;
-    margin: 300px 0 0 40px;
+    margin: 1200px 0 0 40px;
 }
 
 .c {
@@ -128,7 +142,7 @@ h1 {
     width: 95%;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 350px;
+    margin-top: 1250px;
 }
 
 
