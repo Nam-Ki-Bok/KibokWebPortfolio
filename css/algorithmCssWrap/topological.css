@@ -113,15 +113,15 @@ h1 {
 
 .algorithm {
     position: absolute;
-    width: 40%;
+    width: 600px;
     margin: 30px 0 0 55px;
     background-color: #434343;
 }
 
 .algorithm2 {
     position: absolute;
-    width: 40%;
-    margin: 843px 0 0 700px;
+    width: 700px;
+    margin: 771px 0 0 700px;
     background-color: #434343;
 }
 
