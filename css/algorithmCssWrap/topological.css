@@ -109,6 +109,19 @@ h1 {
     .description2 {
         display: none;
     }
+
+    /*    test code*/
+    .algorithm2 {
+        margin: 1100px 0 0 55px;
+    }
+
+    .viewCode {
+        margin: 1400px 0 0 40px;
+    }
+
+    .c {
+        margin-top: 1450px;
+    }
 }
 
 .algorithm {
