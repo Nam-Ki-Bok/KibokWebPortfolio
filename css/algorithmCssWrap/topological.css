@@ -79,7 +79,7 @@ h1 {
     font-family: 'BM';
     font-size: 17px;
     color: #ededed;
-    margin: 100px 0 0 630px;
+    margin: 100px 0 0 600px;
 }
 
 .reponsiveDescription2 {
@@ -87,14 +87,14 @@ h1 {
     font-family: 'BM';
     font-size: 17px;
     color: #ededed;
-    margin: 100px 0 0 630px;
+    margin: 100px 0 0 600px;
     display: none;
 }
 
-@media(max-width:1300px) {
+@media(max-width:1370px) {
     .reponsiveDescription2 {
         display: block;
-        font-size: 13xp;
+        font-size: 13px;
     }
 
     .description2 {
@@ -106,7 +106,6 @@ h1 {
     position: absolute;
     width: 500px;
     margin: 30px 0 0 55px;
-    background-color: #434343;
 }
 
 .viewCode {
