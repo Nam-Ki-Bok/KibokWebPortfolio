@@ -139,6 +139,12 @@ h1 {
     .description {
         display: none;
     }
+
+    .reponsiveDescription2 {
+       margin: 100px 0 0 700px;
+    }
+
+
 }
 
 
