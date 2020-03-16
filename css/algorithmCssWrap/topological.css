@@ -87,7 +87,7 @@ h1 {
     font-family: 'BM';
     font-size: 17px;
     color: #ededed;
-     margin: 100px 0 0 700px;
+    margin: 100px 0 0 700px;
     display: none;
 }
 
@@ -147,7 +147,17 @@ h1 {
 
 
 @media(max-width:1000px) {
+    .algorithm2 {
+        margin: 1100px 0 0 55px;
+    }
 
+    .viewCode {
+        margin: 1400px 0 0 40px;
+    }
+
+    .c {
+        margin-top: 1450px;
+    }
 }
 
 
