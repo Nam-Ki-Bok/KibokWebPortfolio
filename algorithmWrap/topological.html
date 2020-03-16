@@ -56,17 +56,21 @@
         - <span class="highlight">방향그래프가 싸이클이 없다면 위상정렬</span>을 가지고<br><br>
         &nbsp;&nbsp;&nbsp;그 역도 참인 특징이 있다<br><br><br>
         - 위상정렬은 <span class="highlight">정점의 진입차수를 이용하는 방법</span>과<br><br>
-        &nbsp;&nbsp;&nbsp;<span class="highlight">DFS를 이용하는 방법</span>이 있다 정점의 진입차수를 이용하는 방법은<br><br>
+        &nbsp;&nbsp;&nbsp;<span class="highlight">DFS를 이용하는 방법</span>이 있다<br><br>
+        &nbsp;&nbsp;&nbsp;정점의 진입차수를 이용하는 방법은<br><br>
         &nbsp;&nbsp;&nbsp;DAG가 아닌 경우 일부 정점의 순서를 정하지 않은채로 멈춘다<br><br>
-        &nbsp;&nbsp;&nbsp;DFS를 이용하는 경우 싸이클이 있더라도 허위의 순서를 계산한다<br><br>
+        &nbsp;&nbsp;&nbsp;DFS를 이용하는 경우 싸이클이 있더라도<br><br>
+        &nbsp;&nbsp;&nbsp;허위의 순서를 계산한다<br><br>
         &nbsp;&nbsp;&nbsp;그 중 DFS(깊이우선탐색)를 이용하는 방법에 대해 알아보겠다<br><br><br>
         - 왼쪽의 그림이 DFS를 이용한 위상정렬을 나타낸 그림이다<br><br>
         &nbsp;&nbsp;&nbsp;아주 간단히 생각하면 DFS 과정 중<br><br>
         &nbsp;&nbsp;&nbsp;정점에 순위를 부여해주기만 하면 된다<br><br><br>
         - 여러가지 그래프를 표현하는 방법이 있지만<br><br>
         &nbsp;&nbsp;&nbsp;간단한 방법인 정점 배열과 부착리스트를 사용해 구현했다<br><br>
-        &nbsp;&nbsp;&nbsp;아래 코드는 위상순서와 방문한 간선의 총 무게를 출력하는 코드이다<br><br>
-        &nbsp;&nbsp;&nbsp;정점, 간선 갯수를 입력하고 각 간선의 시작점, 끝점, 무게를 입력한다
+        &nbsp;&nbsp;&nbsp;아래 코드는 위상순서와 방문한 간선의<br><br>
+        &nbsp;&nbsp;&nbsp;총 무게를 출력하는 코드이다<br><br>
+        &nbsp;&nbsp;&nbsp;정점, 간선 갯수를 입력하고<br><br>
+        &nbsp;&nbsp;&nbsp;각 간선의 시작점, 끝점, 무게를 입력한다
     </p>
 
     <a class="viewCode" href="https://github.com/Nam-Ki-Bok/Sort" target="_blank" onmouseover="this.style.color='#5CAAEF'" onmouseout="this.style.color='white'">View Code<span style="font-size: 20px">(github)</span></a>
