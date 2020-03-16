@@ -79,7 +79,7 @@ h1 {
     font-family: 'BM';
     font-size: 17px;
     color: #ededed;
-    margin: 100px 0 0 700px;
+    margin: 200px 0 0 700px;
 }
 
 .reponsiveDescription2 {
@@ -87,20 +87,11 @@ h1 {
     font-family: 'BM';
     font-size: 17px;
     color: #ededed;
-    margin: 100px 0 0 700px;
+    margin: 200px 0 0 700px;
     display: none;
 }
 
 @media(max-width:1300px) {
-    .responsiveDescription {
-        display: block;
-        font-size: 14px;
-    }
-
-    .description {
-        display: none;
-    }
-
     .reponsiveDescription2 {
         display: block;
         font-size: 13xp;
@@ -109,32 +100,12 @@ h1 {
     .description2 {
         display: none;
     }
-
-    /*    test code*/
-    .algorithm2 {
-        margin: 1100px 0 0 55px;
-    }
-
-    .viewCode {
-        margin: 1400px 0 0 40px;
-    }
-
-    .c {
-        margin-top: 1450px;
-    }
 }
 
 .algorithm {
     position: absolute;
     width: 600px;
     margin: 30px 0 0 55px;
-    background-color: #434343;
-}
-
-.algorithm2 {
-    position: absolute;
-    width: 550px;
-    margin: 835px 0 0 690px;
     background-color: #434343;
 }
 
@@ -146,7 +117,7 @@ h1 {
     position: absolute;
     display: block;
     font-weight: 200;
-    margin: 1200px 0 0 40px;
+    margin: 1100px 0 0 40px;
 }
 
 .c {
@@ -155,21 +126,18 @@ h1 {
     width: 95%;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 1250px;
+    margin-top: 1150px;
 }
 
 
 @media(max-width:1000px) {
-    .algorithm2 {
-        margin: 1100px 0 0 55px;
+    .responsiveDescription {
+        display: block;
+        font-size: 14px;
     }
 
-    .viewCode {
-        margin: 1400px 0 0 40px;
-    }
-
-    .c {
-        margin-top: 1450px;
+    .description {
+        display: none;
     }
 }
 
