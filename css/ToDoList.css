@@ -28,22 +28,8 @@ p {
     padding: 0;
 }
 
-h1 {
-    position: absolute;
-    margin: 30px 0 0 40px;
-    padding-bottom: 17px;
-    font-size: 45px;
-    font-family: 'BM';
-    border-bottom: 5px solid black;
-}
-
-.backButton {
-    position: absolute;
-    width: 72px;
-    height: 37px;
-    background-image: url(../images/KibokWebPortfolio/back.png);
-    top: 60px;
-    right: 0;
-    margin-right: 10px;
-    border: none;
+.background {
+    width: 100%;
+    height: auto;
+    background-size: cover;
 }
