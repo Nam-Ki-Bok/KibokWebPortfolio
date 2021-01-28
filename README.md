@@ -1,7 +1,5 @@
-# KibokWebPortfolio
+# first-web-practice
 
-HTML/CSS 를 배우며 나 혼자 만들고 있던 첫 웹페이지..<br>
-하지만 반응형 까지 전부 코딩해줘야 하는 사실을 깨닫고<br>
-Jekyll 사용 중..<br>
-이 웹페이지에 있는 자료들 전부 옮기는 중..<br><br>
+Jekyll 블로그로 이동하였습니다.
+
 https://nam-ki-bok.github.io
